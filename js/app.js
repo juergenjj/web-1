@@ -1,12 +1,8 @@
-
-
 let btnMenu = document.querySelector(".btn-menu");
 let menu = document.querySelector(".list-group");
 let containerMenu = document.querySelector(".menu");
 
 let activador = true;
-
-
 
 
 //menu de navegacion lateral activacion
@@ -87,29 +83,13 @@ goTop.addEventListener("click", () => {
 });
 
 let verAbajo = document.querySelector("#abajo");
-
 verAbajo.addEventListener("click", () => {
   document.body.scrollTop = "800";
   document.documentElement.scrollTop = "800";
 });
 
 
-   
-new Vue({
-  el: '#app',
-  data: {
-    usuarios: []
-  },
-  mounted() {
-    fetch('./data.json')
-      .then(response => response.json())
-      .then(data => {
-        this.usuarios = data;
- 
-      })
-      .catch(error => console.log(error));
-  }
-});
+
 
 
 
